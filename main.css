@@ -1,0 +1,187 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+}
+
+/* Logo container and Logo */
+
+div .nav-bar > #logo {
+    margin: 0;
+    padding-top: 18px;
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+
+/*Navgiation Bar and the animation */
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: serif;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 34px;
+}
+
+.icon-bar {
+    width: 30px;
+    height: 3px;
+    background-color: #000000;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.nav-bar {
+    position: fixed;
+    background: #ffffff;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+/* Column Grid layout */
+
+[class*="col-"] {
+    float: left;
+    padding: 10px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+/* End of Column Grid layout */
+
+div {
+    width: 100%;
+    height: auto;
+}
+
+div.hook {
+    content: url(images/1.jpg);
+}
+
+div.image {
+    content: url(images/5.jpg);
+}
+
+div.image2 {
+    content: url(images/2.jpg);
+}
+
+div.image3 {
+    content: url(images/3.jpg);
+}
+
+div.image4 {
+    content: url(images/4.jpg);
+}
+
+
+div .instagram-container > p {
+    font-family: verdana;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.fa {
+    font-size: 28px;
+    padding-left: 46.5%;
+}
+
+.instagram-container {
+    margin: 30px 0;
+}
+
+main {
+    clear: both;
+}
+
+/* Drop down menu in navigation */
+.dropbtn {
+    background-color: rgba(0,0,0, 0.1);
+    color: #ffffff;
+    padding: 12px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    font-family: serif;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    overflow: auto;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px;
+    text-decoration: none;
+    display: block;
+    font-size: 12px;
+}
+
+.show {
+    display: block;
+}
