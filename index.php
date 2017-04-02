@@ -27,7 +27,7 @@
 						<a href="#">Home</a>
 						<a href="#">About</a>
 						<div class="dropdown">
-						<button onclick="dropdown()" class="dropbtn">Collections</button>
+						<button onclick="dropdown()" class="dropbtn">Collections<i class="fa fa-caret-down" aria-hidden="true"></i></button>
 							<div id="myDropdown" class="dropdown-content">
 								<a href="#">September 2016</a>
 								<a href="#">October 2016</a>
@@ -54,6 +54,9 @@
 					<div class="image4"></div>
 				</div>
 			</main>
+
+			<footer>
+			</footer>
 		</div>
 
 	<script>
