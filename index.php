@@ -99,7 +99,7 @@
 		}
 
 		$(document).ready(function() {
-			$("a").on('click', function(event) {
+			$("a").on('click', '.all-container', function(event) {
 				if (this.hash !== "") {
 					event.preventDefault();
 
