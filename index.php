@@ -5,7 +5,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="stylesheet.css">
+		<link rel="stylesheet" href="scrolling-nav.css">
+		<link rel="stylesheet" href="main.css">
 	</head>
 	<body>
 		<div class="container">
@@ -24,19 +25,19 @@
 				<div id="myNav" class="overlay">
 					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 					<div class="overlay-content">
-						<a href="#">Home</a>
-						<a href="#">About</a>
+						<a href="#home" class="page-scroll" onclick="closeNav()">Home</a>
+						<a href="#about" class="page-scroll" onclick="closeNav()">About</a>
 						<div class="dropdown">
 						<button onclick="dropdown()" class="dropbtn">Collections<i class="fa fa-caret-down" aria-hidden="true"></i></button>
 							<div id="myDropdown" class="dropdown-content">
-								<a href="#">September 2016</a>
-								<a href="#">October 2016</a>
-								<a href="#">November 2016</a>
-								<a href="#">December 2016</a>
+								<a href="#"  onclick="closeNav()">September 2016</a>
+								<a href="#" onclick="closeNav()">October 2016</a>
+								<a href="#" onclick="closeNav()">November 2016</a>
+								<a href="#" onclick="closeNav()">December 2016</a>
 							</div>
 						</div>
-						<a href="#">Contact</a>
-						<a href="#">FAQ</a>
+						<a href="#" class="page-scroll" onclick="closeNav()">Contact</a>
+						<a href="#" class="page-scroll" onclick="closeNav()">FAQ</a>
 					</div>
 				</div>
 			</header>
@@ -69,7 +70,7 @@
 			<footer>
 			</footer>
 		</div>
-
+	<script type="text/javascript" src="jquery.easing.min.js"></script>
 	<script>
 		function openNav() {
 			document.getElementById("myNav").style.height = "100%";
@@ -96,6 +97,17 @@
 		    }
 		  }
 		}
+		$(function () {
+			$(document).on('click', 'a.page-scroll', function(event) {
+				var $anchor = $(this);
+				$('html, body').stop().animate({
+					scrollTop: $($anchor.attr('href')).offset().top
+				}, 1500, 'easeInOutExpo');
+				event.preventDefault();
+			});
+		});
+
+	
 	</script>
 	</body>
 </html>
