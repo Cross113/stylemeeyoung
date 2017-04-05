@@ -40,6 +40,7 @@ div .nav-bar > #logo {
     width: 100%;
     text-align: center;
     margin-top: 30px;
+    overflow-x: hidden;
 }
 
 .overlay a {
@@ -79,6 +80,7 @@ div .nav-bar > #logo {
 .nav-bar {
     position: fixed;
     background: #000000;
+    top: 0;
     opacity: 0.8;
 }
 
@@ -145,7 +147,6 @@ div.image4 {
     content: url(images/4.jpg);
 }
 
-
 div .instagram-container > p {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
@@ -159,10 +160,11 @@ div .instagram-container > p {
 
 #mee  {
     padding-left: 4px;
-    padding-right: 3px;
     padding-top: 5px;
     padding-bottom: 5px;
-    letter-spacing: 10px;
+    margin-right: 5px;
+    letter-spacing: 5px;
+    border: 1px solid #000000;
 }
 
 
@@ -175,7 +177,7 @@ div .instagram-container > p {
 .instagram-container {
     padding: 20px 0;
     background-color: rgba(246, 244, 243, 1); 
-    background-color: #ececec;
+    background-color: #fafafa;
 
 }
 
@@ -185,8 +187,9 @@ main {
 
 main .main-container > .about-container {
     margin: 0;
-    padding: 0;
-    background-color: #efefef; 
+    padding: 35px;
+    background-color: #ffffff; 
+
 }
 
 main .main-container .about-container > .about-me, .about-content {
@@ -197,7 +200,7 @@ main .main-container .about-container > .about-me, .about-content {
     text-align: right;
     font-family: 'Roboto', sans-serif;
     letter-spacing: 4px;
-    font-size: 18px;
+    font-size: 24px;
     text-transform: uppercase;
     padding: 10px;
 }
@@ -223,6 +226,7 @@ main .main-container .about-container > .about-me, .about-content {
 .dropdown-content {
     display: none;
     overflow: auto;
+    overflow-x: hidden;
     z-index: 1;
 }
 
