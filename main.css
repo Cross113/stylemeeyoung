@@ -45,11 +45,13 @@ div .nav-bar > #logo {
 .overlay a {
     padding: 12px;
     text-decoration: none;
-    font-size: 18px;
-    font-family: serif;
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
     color: #ffffff;
     display: block;
     transition: 0.3s;
+    letter-spacing: 3px;
+    text-transform: uppercase;
 }
 
 .overlay a:hover, .overlay a:focus {
@@ -60,16 +62,19 @@ div .nav-bar > #logo {
     position: absolute;
     top: 20px;
     right: 45px;
-    font-size: 34px;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .icon-bar {
     width: 30px;
-    height: 3px;
+    height: 1.5px;
     background-color: #000000;
     margin: 5px 0;
     cursor: pointer;
 }
+
+
 
 .nav-bar {
     position: fixed;
@@ -108,6 +113,10 @@ div .nav-bar > #logo {
     width: 25%;
 }
 
+.col-6 {
+    width: 50%;
+}
+
 /* End of Column Grid layout */
 
 div {
@@ -137,24 +146,42 @@ div.image4 {
 
 
 div .instagram-container > p {
-    font-family: verdana;
+    font-family: 'Roboto', sans-serif;
     font-size: 14px;
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: 3px;
+    font-weight: bold;
+    letter-spacing: 10px;
+
+
 }
 
-.instagram-container > a > .fa {
+#mee  {
+    padding-left: 4px;
+    padding-right: 3px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    letter-spacing: 10px;
+}
+
+
+.instagram-container > .row > .col-6 > a > .fa {
     font-size: 28px;
     padding-left: 46.5%;
+    color: #000000;
 }
 
 .instagram-container {
-    margin: 30px 0;
+    padding: 20px 0;
+
 }
 
 main {
     clear: both;
+}
+
+main .main-container > .about-container {
+    background-color: rgba(245, 247, 247, 1); 
 }
 
 /* Drop down menu in navigation */
@@ -162,15 +189,18 @@ main {
     background-color: rgba(0,0,0, 0.1);
     color: #ffffff;
     padding: 12px;
-    font-size: 18px;
+    font-size: 13px;
     border: none;
     cursor: pointer;
-    font-family: serif;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 3px;
+    text-transform: uppercase;
 }
 
 .dropdown {
     position: relative;
     display: inline-block;
+    margin-left: 5px;
 }
 
 .dropdown-content {
@@ -184,7 +214,8 @@ main {
     padding: 12px;
     text-decoration: none;
     display: block;
-    font-size: 12px;
+    font-size: 8px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .show {

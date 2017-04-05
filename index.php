@@ -3,8 +3,9 @@
 	<head>
 		<title></title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="main.css">
+		<link rel="stylesheet" href="stylesheet.css">
 	</head>
 	<body>
 		<div class="container">
@@ -12,13 +13,12 @@
 				<div  class="nav-bar" class="row">
 					<div class="col-3">
 						<div class="icon-bar-container" onclick="openNav()">
-							<div class="icon-bar"></div>
-							<div class="icon-bar"></div>
-							<div class="icon-bar"></div>
+							<div class="icon-bar bar1"></div>
+							<div class="icon-bar bar2"></div>
 						</div>
 					</div>
 
-					<h2 id="logo">Style Mee Young</h2>
+					<!-- <h2 id="logo">Style Mee Young</h2> -->
 				</div>
 
 				<div id="myNav" class="overlay">
@@ -45,8 +45,19 @@
 				<div class="main-container">
 					<div class="hook"></div>
 					<div class="instagram-container">
-						<p class="instagram">Follow me on Instagram</p>
-						<a href="https://www.instagram.com/stylemeeyoung/"><i class="fa fa-instagram"></i></a>
+						<p class="instagram">style<span id="mee">me</span>young</p>
+						<div class="row">
+							<div class="col-6">
+								<a href="https://www.instagram.com/stylemeeyoung/"><i class="fa fa-instagram"></i></a>
+							</div>
+							<div class="col-6">
+								<a href="#"><i class="fa fa-facebook-square"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="about-container" id="about">
+						<h2 class="about-me">About</h2>
+						<p class="about-content">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>	
 					</div>
 					<div class="image"></div>
 					<div class="image2"></div>

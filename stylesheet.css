@@ -13,10 +13,10 @@ body {
 /* Logo container and Logo */
 
 div .nav-bar > #logo {
-	margin: 0;
-	padding-top: 18px;
-	font-size: 12px;
-	letter-spacing: 3px;
+    margin: 0;
+    padding-top: 18px;
+    font-size: 12px;
+    letter-spacing: 3px;
 }
 
 
@@ -45,11 +45,13 @@ div .nav-bar > #logo {
 .overlay a {
     padding: 12px;
     text-decoration: none;
-    font-size: 18px;
-    font-family: serif;
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
     color: #ffffff;
     display: block;
     transition: 0.3s;
+    letter-spacing: 3px;
+    text-transform: uppercase;
 }
 
 .overlay a:hover, .overlay a:focus {
@@ -60,20 +62,29 @@ div .nav-bar > #logo {
     position: absolute;
     top: 20px;
     right: 45px;
-    font-size: 34px;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .icon-bar {
     width: 30px;
-    height: 3px;
-    background-color: #000000;
+    height: 1.5px;
+    background-color: #ffffff;
     margin: 5px 0;
     cursor: pointer;
 }
 
+
+
 .nav-bar {
-	position: fixed;
-	background: #ffffff;
+    position: fixed;
+    background: #000000;
+    opacity: 0.8;
+}
+
+.overlay-content .fa {
+    padding-left: 10px;
+    font-size: 8px;
 }
 
 @media screen and (max-height: 450px) {
@@ -103,65 +114,127 @@ div .nav-bar > #logo {
     width: 25%;
 }
 
+.col-6 {
+    width: 50%;
+}
+
 /* End of Column Grid layout */
 
 div {
-	width: 100%;
-	height: auto;
+    width: 100%;
+    height: auto;
 }
 
 div.hook {
-	content: url(images/1.jpg);
+    content: url(images/1.jpg);
 }
 
 div.image {
-	content: url(images/5.jpg);
+    content: url(images/5.jpg);
 }
 
 div.image2 {
-	content: url(images/2.jpg);
+    content: url(images/2.jpg);
 }
 
 div.image3 {
-	content: url(images/3.jpg);
+    content: url(images/3.jpg);
 }
 
 div.image4 {
-	content: url(images/4.jpg);
+    content: url(images/4.jpg);
 }
 
 
 div .instagram-container > p {
-	font-family: verdana;
-	font-size: 14px;
-	text-align: center;
-	text-transform: uppercase;
-	letter-spacing: 3px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 10px;
+
+
 }
 
-.fa {
-	font-size: 28px;
-	padding-left: 46.5%;
+#mee  {
+    padding-left: 4px;
+    padding-right: 3px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    letter-spacing: 10px;
+}
+
+
+.instagram-container > .row > .col-6 > a > .fa {
+    font-size: 28px;
+    padding-left: 46.5%;
+    color: #000000;
 }
 
 .instagram-container {
-	margin: 30px 0;
+    padding: 20px 0;
+    background-color: rgba(246, 244, 243, 1); 
+    background-color: #ececec;
+
 }
 
 main {
     clear: both;
 }
 
+main .main-container > .about-container {
+    margin: 0;
+    padding: 0;
+    background-color: #efefef; 
+}
+
+main .main-container .about-container > .about-me, .about-content {
+    margin: 0;
+}
+
+.about-me {
+    text-align: right;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 4px;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 10px;
+}
 /* Drop down menu in navigation */
 .dropbtn {
-	color: #ffffff;
-	padding: 12px;
-	font-size: 18px;
-	border: none;
-	cursor: pointer;
+    background-color: rgba(0,0,0, 0.1);
+    color: #ffffff;
+    padding: 12px;
+    font-size: 13px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 3px;
+    text-transform: uppercase;
 }
 
 .dropdown {
-	position: relative;
-	display: inline-block;
+    position: relative;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.dropdown-content {
+    display: none;
+    overflow: auto;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px;
+    text-decoration: none;
+    display: block;
+    font-size: 8px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.show {
+    display: block;
 }
